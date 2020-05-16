@@ -1,0 +1,14 @@
+{% extends 'app/base.html' %}
+{%block content%}
+<a class="btn2" href="{% url 'app:new_memo' %}">課題を追加する</a>
+
+{% for memo in memos %}
+<a href="{% url 'app:detail' memo.id %}" class="memo-title">
+  <div>
+    {{ memo }}
+    <span class="updated_datetime">{{ memo.created_datetime|date:"n月j日 H:i 課題開始" }}</span>
+  </div>
+</a>
+{% endfor %}
+
+{%endblock%}

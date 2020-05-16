@@ -1,0 +1,18 @@
+{% extends 'app/base.html' %}
+{%block content%}
+<div>
+  <a class="home" href="{% url 'app:index' %}">ホームに戻る</a>
+</div>
+
+<form action="{% url 'app:new_memo' %}" method="POST">{% csrf_token %}
+  <div class "wrap">
+    <p>課題</p>
+    {{ form.title }}
+    <p>締め切り・urlなどのメモ</p>
+    {{ form.text }}
+  </div>
+
+  <button type="submit" class="btn">保存</button>
+</form>
+
+{%endblock%}

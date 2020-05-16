@@ -1,0 +1,131 @@
+body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  button {
+    background: none;
+    border: 0;
+  }
+  
+  form {
+    display: inline-block;
+  }
+  
+  .note::before {
+    background-color: black;
+  }
+  
+  .note {
+    background-image: url("../image/note.jpg");
+    background-size: cover;
+    letter-spacing: 2px;
+  }
+  
+  .title {
+    padding: 70px 0 70px 50px;
+  }
+  
+  h1 {
+    font-size: 3rem;
+    color:white;
+  }
+  
+  .attend {
+    color: red;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .title span {
+    color: white;
+    font-weight: normal;
+  }
+  
+  .btn {
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    margin: 30px 0;
+    color: gray;
+    width: 100px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    background: linear-gradient(#fed6e3 0%, #ffaaaa 100%);
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.66);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.28);
+  }
+  
+  .btn2 {
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    margin: 30px 0;
+    color: gray;
+    width: 150px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    background: linear-gradient(#fed6e3 0%, #ffaaaa 100%);
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.66);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.28);
+  }
+  
+  .btn:active {
+    transform: translateY(5px);
+    background-image: linear-gradient(#fed6e3 0%, #ffbcbc 100%);
+  }
+  
+  .home {
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    margin: 30px 0;
+    color: gray;
+    width: 150px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    background: linear-gradient( #aaff80 0%, #00ff1e 100%);
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.66);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.28);
+  }
+  
+  .home:active {
+    transform: translateY(5px);
+    background: linear-gradient( #aaff80 0%, #00ff1e 100%);
+  }
+  
+  .btn2:active {
+    transform: translateY(5px);
+    background-image: linear-gradient(#fed6e3 0%, #ffbcbc 100%);
+  }
+  
+  .container {
+    width: 70%;
+    margin: auto;
+  }
+  
+  .memo-title {
+    display: block;
+    border-bottom: 1px solid gray;
+    padding: 20px;
+    font-size: 20px;
+    color: #444;
+    text-decoration: none;
+  }
+  
+  .memo-title:hover {
+    background-color: #eee;
+  }
+  
+  .updated_datetime {
+    float: right;
+  }

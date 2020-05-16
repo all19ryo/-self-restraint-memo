@@ -1,0 +1,25 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>自粛期間課題忘れ防止メモ</title>
+  <link rel="stylesheet" type="text/css" href="{% static 'app/css/style.css' %}">
+</head>
+
+<body>
+  <div class="note" id="note">
+    <div class="title">
+      <h1>自粛期間課題忘れ防止メモ</h1>
+      <p class="attend"><span>その1:</span> 課題でたらさっさと書き込む</p>
+      <p class="attend"><span>その2:</span> 3日以内に終わらす</p>
+    </div>
+  </div>
+  <div class="container">
+    {% block content %}{% endblock %}
+  </div>
+
+</body>
+
+</html>
